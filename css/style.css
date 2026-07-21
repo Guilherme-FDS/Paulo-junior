@@ -208,13 +208,6 @@ h1, h2 {
 }
 .hero__sub strong { color: var(--text); }
 
-.hero__trust {
-  margin-top: 1rem;
-  font-size: .82rem;
-  color: var(--text-dim);
-  letter-spacing: .04em;
-}
-
 .hero__fade {
   position: absolute;
   left: 0; right: 0; bottom: 0;
