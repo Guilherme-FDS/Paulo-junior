@@ -483,16 +483,49 @@ h1, h2 {
   margin-bottom: 2.4rem;
 }
 
+/* ============ INSTAGRAM ============ */
+.insta {
+  border-top: 1px solid var(--line);
+  background: var(--bg-alt);
+  padding: 3.5rem 0;
+}
+.insta__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.insta__text h2 { font-size: clamp(1.9rem, 3.4vw, 2.6rem); margin-bottom: .5rem; }
+.insta__text .eyebrow { margin-bottom: .6rem; }
+.insta__sub { color: var(--text-dim); font-size: .95rem; max-width: 46ch; }
+.btn--insta {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  border: 1px solid var(--gold);
+  color: var(--gold-light);
+  background: transparent;
+  white-space: nowrap;
+}
+.btn--insta:hover { background: rgba(212, 175, 55, .1); transform: translateY(-2px); }
+
 /* ============ FOOTER ============ */
 .footer {
   border-top: 1px solid var(--line);
-  padding: 3rem 0;
-  text-align: center;
+  padding: 1.4rem 0;
 }
-.footer__logo { height: 130px; margin: 0 auto 1rem; }
-.footer a { color: var(--gold-light); text-decoration: none; letter-spacing: .04em; }
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.footer__logo { height: 34px; width: auto; }
+.footer a { color: var(--gold-light); text-decoration: none; letter-spacing: .04em; font-size: .85rem; }
 .footer a:hover { text-decoration: underline; }
-.footer__copy { margin-top: .6rem; color: var(--text-dim); font-size: .8rem; }
+.footer__copy { color: var(--text-dim); font-size: .78rem; }
 
 /* ============ WHATSAPP FLUTUANTE ============ */
 .whats-float {
@@ -563,5 +596,8 @@ h1, h2 {
   .cta-final { padding: 6.5rem 0; }
   .faq__item p { padding-right: .5rem; }
   .whats-float { width: 54px; height: 54px; right: 1rem; bottom: 1rem; }
-  .footer__logo { height: 100px; }
+  .insta { padding: 2.6rem 0; }
+  .insta__inner { flex-direction: column; align-items: flex-start; }
+  .btn--insta { width: 100%; justify-content: center; }
+  .footer__inner { flex-direction: column; text-align: center; gap: .5rem; }
 }
