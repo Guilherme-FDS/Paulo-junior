@@ -172,8 +172,20 @@ h1, h2 {
   letter-spacing: .06em;
   text-transform: uppercase;
   white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
 }
-.stickybar__name b { color: var(--gold-light); font-weight: 400; }
+.stickybar__name b { color: var(--gold-light); font-weight: 400; display: contents; }
+.stickybar__name em {
+  font-style: normal;
+  font-family: var(--font-body);
+  font-size: .5rem;
+  font-weight: 600;
+  letter-spacing: .3em;
+  color: var(--text-dim);
+  margin-top: .25rem;
+}
 .stickybar__btn {
   padding: .6rem 1.3rem;
   font-size: .78rem;
