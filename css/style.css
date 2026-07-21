@@ -513,19 +513,13 @@ h1, h2 {
 /* ============ FOOTER ============ */
 .footer {
   border-top: 1px solid var(--line);
-  padding: 1.4rem 0;
+  padding: 3rem 0;
+  text-align: center;
 }
-.footer__inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-.footer__logo { height: 34px; width: auto; }
-.footer a { color: var(--gold-light); text-decoration: none; letter-spacing: .04em; font-size: .85rem; }
+.footer__logo { height: 130px; margin: 0 auto 1rem; }
+.footer a { color: var(--gold-light); text-decoration: none; letter-spacing: .04em; }
 .footer a:hover { text-decoration: underline; }
-.footer__copy { color: var(--text-dim); font-size: .78rem; }
+.footer__copy { margin-top: .6rem; color: var(--text-dim); font-size: .8rem; }
 
 /* ============ WHATSAPP FLUTUANTE ============ */
 .whats-float {
@@ -599,5 +593,5 @@ h1, h2 {
   .insta { padding: 2.6rem 0; }
   .insta__inner { flex-direction: column; align-items: flex-start; }
   .btn--insta { width: 100%; justify-content: center; }
-  .footer__inner { flex-direction: column; text-align: center; gap: .5rem; }
+  .footer__logo { height: 100px; }
 }
